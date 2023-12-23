@@ -1,6 +1,6 @@
 ## Classroom Fluorescent Tubes Simulation
 
-This code contains two simulations. These can be accessed from the 
+This code contains two simulations. These can be accessed from the UI.
 
 ### The problem
 
@@ -13,8 +13,19 @@ Every fluorescent tube works for a fixed amount of hours, that amount is returne
 Once 2 fluorescent tubes fail in a single unit, you should replace all 4 tubes. Each fluorescent tube costs 7 $USD.
 
 The algorithm should print:
+
 1. How many fluorescent tubes were broken in 1 year in that classroom?
 2. How much money do fluorescent tubes cost the University per year per classroom?
+
+### Backend simulation
+
+Backend simulation uses `/simulate` endpoint. It will only have one request and will perform the execution in backend.
+
+### Frontend simulation
+
+Frontend simulation simulates the problem in the frontend. But it uses the `purchase-new-unit` to simulate _"purchase"_ of a new unit.
+This will return a unit with 4 tubes and its lifespan. This will call this api whenever one of the four units are fails.
+It will continue the process until the end of the year.
 
 ### Technologies
 
@@ -38,7 +49,7 @@ To run the frontend and backend servers together. Please use
 ./dev
 ```
 
-then visit http://localhost:3000/ 
+then visit http://localhost:3000/
 
 ### testing
 
@@ -46,4 +57,3 @@ then visit http://localhost:3000/
 cd backend
 bundle exec rspec
 ```
-
