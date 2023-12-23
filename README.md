@@ -37,3 +37,11 @@ To run the frontend and backend servers together. Please use
 ```
 
 then visit http://localhost:3000/ 
+
+### testing
+
+```
+cd backend
+bundle exec rspec
+```
+
