@@ -24,7 +24,7 @@ Backend simulation uses `/simulate` endpoint. It will only have one request and 
 ### Frontend simulation
 
 Frontend simulation simulates the problem in the frontend. But it uses the `purchase-new-unit` to simulate _"purchase"_ of a new unit.
-This will return a unit with 4 tubes and its lifespan. This will call this api whenever one of the four units are fails.
+This will return a unit with 4 tubes and its lifespan. This will call this api whenever a unit fails. That is, two of the four tubes in the unit are failed.
 It will continue the process until the end of the year.
 
 ### Technologies
