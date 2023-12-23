@@ -25,8 +25,10 @@ It is only tested in macOS.
 
 ### Installation
 
-* cd frontend && npm install && cd -
-* cd backend && bundle install && cd -
+```sh
+cd frontend && npm install && cd -
+cd backend && bundle install && cd -
+```
 
 ### Running
 
@@ -40,7 +42,7 @@ then visit http://localhost:3000/
 
 ### testing
 
-```
+```sh
 cd backend
 bundle exec rspec
 ```
