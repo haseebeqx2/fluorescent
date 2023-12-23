@@ -7,7 +7,7 @@ class Simulation
   MONTHS_PER_YEAR = 9
 
   def initialize
-    @total_hours_per_year = HOURS_PER_DAY * DAYS_PER_WEEK * (4 * MONTHS_PER_YEAR)
+    @total_hours_per_year = hours_per_year
     @total_broken_tubes = 0
   end
 
@@ -33,5 +33,13 @@ class Simulation
       end
       hours_remaining -= HOURS_PER_DAY
     end
+  end
+
+  def hours_per_year
+    average_days_per_month = 30.44
+    months_per_year = 9
+    total_days_per_year = average_days_per_month * months_per_year
+    weeks_per_year = (total_days_per_year / 7).round
+    HOURS_PER_DAY * DAYS_PER_WEEK * weeks_per_year
   end
 end
