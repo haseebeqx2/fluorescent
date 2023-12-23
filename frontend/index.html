@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classroom Fluorescent Tubes Simulation</title>
+  <script type="module" src="./src/main.ts"></script>
+  <link href="./src/input.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+  <div class="container mx-auto px-4 py-10">
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-extrabold text-gray-800 mb-4">Classroom Fluorescent Tubes Simulation</h1>
+      <p class="text-gray-700">Estimate the maintenance cost and tube replacements in a year for your university</p>
+    </header>
+
+    <section class="text-center mb-12">
+      <button id="simulateBtn"
+        class="bg-blue-600 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out">
+        Run in Backend
+      </button>
+      <button id="simulateFrontendBtn"
+        class="bg-blue-600 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out">Run
+        in Frontend</button>
+    </section>
+    <div id="loadingScreen" class="fixed inset-0 bg-gray-200 bg-opacity-75 flex justify-center items-center hidden">
+      <div class="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full" role="status">
+      </div>
+    </div>
+    <section id="resultSection" class="hidden">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6">Simulation Results</h2>
+      <div class="bg-white shadow-md rounded-lg p-8">
+        <p id="brokenTubes" class="text-xl text-gray-900 mb-4"></p>
+        <p id="totalCost" class="text-xl text-gray-900"></p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

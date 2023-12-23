@@ -1,0 +1,2 @@
+web: cd frontend && npm run start
+api: cd backend && bundle exec ruby server.rb -p 4000

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner-border {
+  display: inline-block;
+  vertical-align: middle;
+  border-style: solid;
+  border-color: currentColor transparent currentColor transparent;
+  animation: spin 1s linear infinite;
+}
